@@ -23,7 +23,7 @@ if __name__ == '__main__':
     # intervalor de valores de "X":
     x = np.linspace(0, 10, 40)
 
-    # Realizar tres gráficos que representen
+    # Realizar cuatro gráficos que representen
     # y1 = x^2 (X al cuadrado)
     # y2 = x^3 (X al cubo)
     # y3 = x^4 (X a la cuarta)
@@ -53,5 +53,30 @@ if __name__ == '__main__':
     # Colocar una grilla a elección
 
     # Crear acá su gráfico
+
+    fig = plt.figure()
+    fig.suptitle('Funciones', fontsize=16)
+    ax1 = fig.add_subplot(2, 2, 1)
+    ax2 = fig.add_subplot(2, 2, 2)
+    ax3 = fig.add_subplot(2, 2, 3)
+    ax4 = fig.add_subplot(2, 2, 4)
+
+    ax1.plot(x, y1, c='darkred')
+    ax1.legend('Cuadrada')
+    ax1.grid()
+
+    ax2.plot(x, y2, c='blue')
+    ax2.legend('Cúbica')
+    ax2.grid()
+
+    ax3.plot(x, y3, c='green')
+    ax3.legend('Cuarta')
+    ax3.grid()
+
+    ax4.plot(x, y4, c='orange')
+    ax4.legend('Absolutos')
+    ax4.grid()
+
+    plt.show()
 
     print("terminamos")

@@ -33,5 +33,15 @@ if __name__ == '__main__':
     # Elegir un marker a elección
 
     # Crear acá su gráfico
+    #///////////////////////////////
+    fig = plt.figure()
+    fig.suptitle('Tangente hiperbólica', fontsize=16)
+    ax1 = fig.add_subplot(1, 2, 1)  # 1 fila, 2 columnas, axes nº1
+
+    ax1.scatter(x, y, c='darkred')
+    ax1.legend()
+    ax1.grid()
+    plt.show()
+    #///////////////////////////////
 
     print("terminamos")

@@ -45,5 +45,14 @@ if __name__ == '__main__':
     # a su elección
 
     # Crear acá su gráfico
+    fig = plt.figure()
+    fig.suptitle('Funciones', fontsize=16)
+    ax = fig.add_subplot()
+
+    ax.plot(x, y1, c='red', label='Función cuadrada')
+    ax.plot(x, y2, c='green', label='Función cúbica')
+    ax.legend()
+    ax.grid()
+    plt.show()
 
     print("terminamos")
